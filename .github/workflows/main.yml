@@ -19,4 +19,6 @@ jobs:
     steps:
       - name: Kubernetes KinD Cluster
         uses: container-tools/kind-action@v1.5.0
-        cluster_name: three
+        with:
+          cluster_name: "three"
+
