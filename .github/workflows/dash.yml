@@ -27,8 +27,8 @@ jobs:
             format: html
             filename: 'out/index.html'
           sections:
-          - title: 'Open Issues by Type'
-            description: 'Queries of issues by type, using their label.'
+          - title: 'Issues per label'
+            description: ''
             widgets:
             - type: 'number'
               title: 'Bug'
