@@ -76,8 +76,8 @@ jobs:
         token: ${{ github.token }}
     - name: Find and Replace css and js
       run: |
-        sed -i -e 's@dashboard.css@/dashboard.css@g' dashboard.html
-        sed -i -e 's@dashboard.js@/dashboard.js@g' dashboard.html
+        sed -i -e 's@dashboard.css@/dashboard.css@g' out/dashboard.html
+        sed -i -e 's@dashboard.js@/dashboard.js@g' out/dashboard.html
         
     - name: Publish Documentation
       run: |
