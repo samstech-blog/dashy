@@ -75,6 +75,30 @@ jobs:
               - title: '>3 years'
                 issue_query: 'repo:portainer/portainer is:open is:issue created:<{{ date("-365 days") }}'
                 color: 'red'
+          - title: 'Pull Requests'
+            widgets:
+            - type: 'number'
+              title: 'Changes Requested'
+              issue_query: 'repo:portainer/portainer is:open is:pr review:changes_requested'
+              color: 'green'
+            - type: 'number'
+              title: 'Needs Review'
+              issue_query: 'repo:portainer/portainer is:open is:pr review:none'
+              color: 'red'
+            - type: 'table'
+              title: 'Pull Requests with Changes Requested'
+              issue_query: 'repo:portainer/portainer is:open is:pr review:changes_requested sort:created-asc'
+            - type: 'table'
+              title: 'Oldest Pull Requests without Review'
+              fields:
+              - title: 'Issue'
+                property: 'number'
+              - title: 'Date'
+                value: '{{ date(item.created_date) }}'
+              - title: 'Title'
+                property: 'title'
+              issue_query: 'repo:portainer/portainer is:open is:pr review:none sort:created-asc'
+              limit: 15
         token: ${{ github.token }}
     - name: Find and Replace css and js
       run: |
