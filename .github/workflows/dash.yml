@@ -22,7 +22,7 @@ jobs:
       uses: ethomson/issue-dashboard@v1
       with:
         config: |
-          title: 'Dashboard'
+          title: 'GitHub Issues Dashboard for <a href="https://github.com/portainer/portainer/issues" target="_blank" rel="noopener noreferrer">portainer/portainer</a>'
           output:
             format: html
             filename: 'out/index.html'
