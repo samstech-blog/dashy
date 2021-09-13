@@ -1,5 +1,5 @@
 name: Feature Request
-description: Suggest an idea or new funationality for this project.
+description: Suggest an idea or new functionality for this project.
 body:
   - type: checkboxes
     id: terms
