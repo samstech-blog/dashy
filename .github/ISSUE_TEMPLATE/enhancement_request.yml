@@ -1,5 +1,5 @@
-name: Feature Request
-description: Suggest an idea or new funationality for this project.
+name: Enhancement Request
+description: Suggest an enhancement for existing functionality in this project.
 body:
   - type: checkboxes
     id: terms
