@@ -1,55 +1,80 @@
----
-name: Bug report
-about: Create a bug report
-title: ''
-labels: bug/need-confirmation, kind/bug
-assignees: ''
+name: Bug Report (Traefik)
+description: Create a report to help us improve.
+body:
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Welcome!
+      description: |
+        The issue tracker is for reporting bugs and feature requests only. For end-user related support questions, please refer to one of the following:
+        - the Traefik community forum: https://community.containo.us/
 
----
+        The configurations between 1.X and 2.X are NOT compatible. Please have a look [here](https://doc.traefik.io/traefik/getting-started/configuration-overview/).
 
-<!--
+        DO NOT FILE ISSUES FOR GENERAL SUPPORT QUESTIONS.
+      options:
+        - label: Yes, I've searched similar issues on [GitHub](https://github.com/traefik/traefik/issues) and didn't find any.
+          required: true
+        - label: Yes, I've searched similar issues on the [Traefik community forum](https://community.containo.us) and didn't find any.
+          required: true
 
-Thanks for reporting a bug for Portainer !
+  - type: textarea
+    attributes:
+      label: What did you do?
+      description: |
+        How to write a good bug report?
 
-You can find more information about Portainer support framework policy here: https://www.portainer.io/2019/04/portainer-support-policy/
+        - Respect the issue template as much as possible.
+        - The title should be short and descriptive.
+        - Explain the conditions which led you to report this issue: the context.
+        - The context should lead to something, an idea or a problem that you’re facing.
+        - Remain clear and concise.
+        - Format your messages to help the reader focus on what matters and understand the structure of your message, use [Markdown syntax](https://help.github.com/articles/github-flavored-markdown)
+      placeholder: What did you do?
+    validations:
+      required: true
 
-Do you need help or have a question? Come chat with us on Slack http://portainer.slack.com/
+  - type: textarea
+    attributes:
+      label: What did you see instead?
+      placeholder: What did you see instead?
+    validations:
+      required: true
 
-Before opening a new issue, make sure that we do not have any duplicates
-already open. You can ensure this by searching the issue list for this
-repository. If there is a duplicate, please close your issue and add a comment
-to the existing issue instead.
+  - type: textarea
+    attributes:
+      label: What version of Traefik are you using?
+      description: |
+        `latest` is not considered as a valid version.
 
-Also, be sure to check our FAQ and documentation first: https://documentation.portainer.io/
--->
+        Output of `traefik version`.
 
-**Bug description**
-A clear and concise description of what the bug is.
+        For the Traefik Docker image (`docker run [IMAGE] version`), example:
+        ```console
+        $ docker run traefik version
+        ```
+      placeholder: Paste your output here.
+    validations:
+      required: true
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+  - type: textarea
+    attributes:
+      label: What is your environment & configuration?
+      description: arguments, toml, provider, platform, ...
+      placeholder: Add information here.
+      value: |
+        ```yaml
+        # (paste your configuration here)
+        ```
 
-**Portainer Logs**
-Provide the logs of your Portainer container or Service.
-You can see how [here](https://documentation.portainer.io/archive/1.23.2/faq/#how-do-i-get-the-logs-from-portainer)
+        Add more configuration information here.
+    validations:
+      required: true
 
-**Steps to reproduce the issue:**
-
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Technical details:**
-
-- Portainer version:
-- Docker version (managed by Portainer):
-- Kubernetes version (managed by Portainer):
-- Platform (windows/linux):
-- Command used to start Portainer (`docker run -p 9000:9000 portainer/portainer`):
-- Browser:
-- Use Case (delete as appropriate): Using Portainer at Home, Using Portainer in a Commerical setup.
-- Have you reviewed our technical documentation and knowledge base? Yes/No
-
-**Additional context**
-Add any other context about the problem here.
+  - type: textarea
+    attributes:
+      label: If applicable, please paste the log output in DEBUG level
+      description: "`--log.level=DEBUG` switch."
+      placeholder: Paste your output here.
+    validations:
+      required: false
