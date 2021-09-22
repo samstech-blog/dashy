@@ -8,4 +8,5 @@ contact_links:
     about: Have a question about Portainer CE? Find all the usual community channels here..
   - name: Portainer Business
     url: https://www.portainer.io/portainerbusiness 
-    about: Need Enterprise functionality and support? Check out Portainer Business..
+    about: Would you and your co-workers benefit from our enterprise edition which provides functionality to deploy Portainer at scale. 
+    
