@@ -13,23 +13,17 @@
         "footer_icon": "${{ env.SLACK_ICON }}",
         "type": "section",
         "text": {
-        "type": "mrkdwn",
-        "text": ":rocket: *DEPLOY* - <${{ github.payload.repository.html_url }}|TIA Repo>"
-        }
-        },
-        {
-        "type": "divider"
+            "type": "mrkdwn",
+            "text": ":rocket: *DEPLOY* - <${{ github.payload.repository.html_url }}|TIA Repo>"
+            }
         },
         {
         "type": "section",
-        "fields": [
-        {
+        "text": {
             "type": "mrkdwn",
             "text": "*Test Environemnt* \n <${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|GitHub Actions Workflow URL>"
-        }       
-        ]
-        }
-
+            }
+    }
 ]
     
 }
