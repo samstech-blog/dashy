@@ -19,7 +19,7 @@
             "fields": [
               {
                 "type": "mrkdwn",
-                "text": "**Test Environemnt** \\n ${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|GitHub Actions Workflow URL>"
+                "text": "*Test Environemnt* \n ${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|GitHub Actions Workflow URL>"
               }       
             ]
           }
