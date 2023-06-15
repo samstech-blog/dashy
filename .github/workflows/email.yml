@@ -9,11 +9,11 @@ on:
         default: 'samdulam'
 
 jobs:
-Run-npm-on-Ubuntu:
-  name: Run npm on Ubuntu
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/setup-node@v3
-      with:
-        node-version: '14'
-    - run: npm help
+  Run-npm-on-Ubuntu:
+    name: Run npm on Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm help
