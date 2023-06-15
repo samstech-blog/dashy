@@ -1,0 +1,34 @@
+name: "Slack Notify"
+
+on:
+  workflow_dispatch:
+
+env:
+  portainer_url: https://success-lts.portainer.io
+  portainer_username: admin
+  portainer_password: test
+  portainer_image: portainer/portainer:latest
+  portainer_agent_image: portainer/agent:latest
+  os: linux
+  orechestration: swarm
+  destroy_id: 097876566
+  SLACK_COLOR: "#00FF00"
+  SLACK_CHANNEL: "#hook-test-infra-auto"
+  SLACK_ICON: 'https://raw.githubusercontent.com/portainer/portainer/master/app/assets/images/logo_ico.png?raw=true'
+  SLACK_USERNAME: 'PortainerBot'
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+
+jobs:
+  new_push_job:
+    runs-on: ubuntu-latest
+    name: New push to repo
+    steps:
+    - name: Send GitHub trigger payload to Slack Workflow Builder
+      id: slack
+      uses: slackapi/slack-github-action@v1.24.0
+      with:
+        payload-file-path: "./payload.json"
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
