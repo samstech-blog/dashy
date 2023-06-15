@@ -18,4 +18,4 @@ jobs:
           node-version: '14'
       - run: |
           sudo npm install --global github-email
-          echo "email = $(github-email ${{ github.event.inputs.gh_username }})
+          echo "email = $(github-email ${{ github.event.inputs.gh_username }})"
