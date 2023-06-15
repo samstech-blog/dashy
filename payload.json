@@ -2,6 +2,7 @@
     "channel": "${{ env.SLACK_CHANNEL }}",
     "username": "${{ env.SLACK_USERNAME }}",
     "icon_url": "${{ env.SLACK_ICON }}",
+    "text": "TIA Infra Notification",
     "attachments": [
       {
         "color": "${{ env.SLACK_COLOR }}",
@@ -12,7 +13,23 @@
             "title": "Test Environment",
             "short": false,
             "value": "${{ github.workflow }} workflow failed on ${{ env.portainer_url }} branch in the ${{ github.payload.repository.full_name }} repository!"
-         }       
+         }, {
+            "title": "Ref",
+            "short": false,
+            "value": "${{ github.ref }}"
+          }, {
+            "title": "Commit",
+            "short": false,
+            "value": "<${{ github.payload.repository.html_url }}/commit/${{ github.sha }}|${{ github.sha }}>"
+          }, {
+            "title": "Author",
+            "short": false,
+            "value": "<https://github.com/${{ github.actor }}|${{ github.actor }}>"
+          }, {
+            "title": "Workflow",
+            "short": false,
+            "value": "<${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|${{ github.workflow }}>"
+          }     
         ]
       }
     ]
