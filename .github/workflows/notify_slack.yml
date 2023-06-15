@@ -24,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     name: New push to repo
     steps:
+    - name: '[Preparation] Checkout the Current Branch'
+      uses: actions/checkout@v3
     - name: Send GitHub trigger payload to Slack Workflow Builder
       id: slack
       uses: slackapi/slack-github-action@v1.24.0
