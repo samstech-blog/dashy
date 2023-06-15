@@ -13,7 +13,7 @@
         "fields": [
           {
             "title": "Test Environment",
-            "text": "<${{ GITHUB_SERVER_URL }}'/'${GITHUB_REPOSITORY}'/actions/runs/'${GITHUB_RUN_ID}'|'GitHub Actions Workflow URL>"
+            "text": "<${{ GITHUB_SERVER_URL }}'/'${{ GITHUB_REPOSITORY }}'/actions/runs/'${{ GITHUB_RUN_ID }}'|'GitHub Actions Workflow URL>"
          }       
         ]
       }
