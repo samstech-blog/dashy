@@ -24,6 +24,10 @@
 					}
                 }				
 			]
-		}
+		},
+        {
+            "footer": "Portainer",
+            "footer_icon": "${{ env.SLACK_ICON }}"
+        }
     ]
 }
