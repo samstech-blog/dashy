@@ -8,7 +8,7 @@ on:
         required: true
         default: 'samdulam'
 env:
-  GH_EMAIL_TOKEN=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
+  
 jobs:
   Run-npm-on-Ubuntu:
     name: Run npm on Ubuntu
@@ -18,5 +18,6 @@ jobs:
         with:
           node-version: '14'
       - run: |
+          export GH_EMAIL_TOKEN=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
           sudo npm install --global github-email
           echo "email = $(github-email ${{ github.event.inputs.gh_username }})"
