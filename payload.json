@@ -10,7 +10,8 @@
         "fields": [
           {
             "title": "Test Environment",
-            "text": "${{ github.workflow }} workflow failed on ${{ env.portainer_url }} branch in the ${{ github.payload.repository.full_name }} repository!"
+            "short": false,
+            "value": "${{ github.workflow }} workflow failed on ${{ env.portainer_url }} branch in the ${{ github.payload.repository.full_name }} repository!"
          }       
         ]
       }
