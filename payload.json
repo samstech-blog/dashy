@@ -5,15 +5,12 @@
     "attachments": [
       {
         "color": "${{ env.SLACK_COLOR }}",
-        // "author_name": "${{ GITHUB_ACTOR }}",
-        // "author_link": "${{ GITHUB_SERVER_URL }}'/'${{ GITHUB_ACTOR }}",
-        // "author_icon": "${{ GITHUB_SERVER_URL} }'/'${{ GITHUB_ACTOR }}.png?size=32",
         "footer": "Portainer",
         "footer_icon": "${{ env.SLACK_ICON }}",
         "fields": [
           {
             "title": "Test Environment",
-            "text": "${{ github.workflow }} workflow failed on ${{ env.DEFAULT_BRANCH }} branch in the ${{ github.event.repository.name }} repository!"
+            "text": "${{ github.workflow }} workflow failed on ${{ env.portainer_url }} branch in the ${{ github.event.repository.name }} repository!"
          }       
         ]
       }
