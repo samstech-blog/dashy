@@ -3,23 +3,25 @@
     "username": "${{ env.SLACK_USERNAME }}",
     "icon_url": "${{ env.SLACK_ICON }}",
     "text": "TIA Notification",
-    "attachments": [
-      {
-        "color": "${{ env.SLACK_COLOR }}",
-        "footer": "Portainer",
-        "footer_icon": "${{ env.SLACK_ICON }}",
-        "blocks": [
-          {
-            "type": "section",
-            "text": {
-              "type": "mrkdwn",
-              "text": ":rocket: *DEPLOY* - <${{ github.event.repository.html_url }}|TIA Repo>"
-            }
-          },
-          {
-            "type": "divider"
-          }
+    "blocks": [
+        {
+        "type": "section",
+        "text": {
+            "type": "mrkdwn",
+            "text": ":rocket: *DEPLOY* - <${{ github.event.repository.html_url }}|TIA Repo>"
+        }
+        },
+        {
+        "type": "divider"
+        },
+        {
+        "type": "section",
+        "fields": [
+            {
+            "title": "Test Environment",
+            "text": "<${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|GitHub Actions Workflow URL>"
+            }       
         ]
-      }
+        }
     ]
     }
