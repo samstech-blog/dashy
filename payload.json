@@ -8,7 +8,7 @@
             "type": "section",
             "text": {
               "type": "mrkdwn",
-              "text": ":rocket: *DEPLOY* - <${{ github.event.repository.html_url }}|TIA Repo>"
+              "text": ":rocket: *DEPLOY* - <${{ github.payload.repository.html_url }}|TIA Repo>"
             }
           },
           {
@@ -19,7 +19,7 @@
             "fields": [
               {
                 "type": "mrkdwn",
-                "text": "*Test Environemnt* \n ${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|GitHub Actions Workflow URL>"
+                "text": "*Test Environemnt* \n <${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|GitHub Actions Workflow URL>"
               }       
             ]
           }
