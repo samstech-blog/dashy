@@ -2,11 +2,11 @@
     "channel": "${{ env.SLACK_CHANNEL }}",
     "username": "${{ env.SLACK_USERNAME }}",
     "icon_url": "${{ env.SLACK_ICON }}",
+    "footer": "Portainer",
+    "footer_icon": "${{ env.SLACK_ICON }}",
     "text": "TIA Notification",
     "attachments": [
 		{
-			"footer": "Portainer",
-            "footer_icon": "${{ env.SLACK_ICON }}",
             "blocks": [
 				{
 					"type": "section",
@@ -23,6 +23,6 @@
 					}
                 }				
 			]
-		}
-	]
-    }
+		},
+    ]
+}
