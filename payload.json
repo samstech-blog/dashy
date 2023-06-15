@@ -3,25 +3,35 @@
     "username": "${{ env.SLACK_USERNAME }}",
     "icon_url": "${{ env.SLACK_ICON }}",
     "text": "TIA Notification",
-        "blocks": [
-          {
-            "type": "section",
-            "text": {
-              "type": "mrkdwn",
-              "text": ":rocket: *DEPLOY* - <${{ github.payload.repository.html_url }}|TIA Repo>"
-            }
-          },
-          {
-            "type": "divider"
-          },
-          {
-            "type": "section",
-            "fields": [
-              {
+    "attachments": [
+        {
+            "color": "${{ env.SLACK_COLOR }}",
+            "author_name": "${{ GITHUB_ACTOR }}",
+            "author_link": "${{ GITHUB_SERVER_URL }}'/'${{ GITHUB_ACTOR }}",
+            "author_icon": "${{ GITHUB_SERVER_URL} }'/'${{ GITHUB_ACTOR }}.png?size=32",
+            "footer": "Portainer",
+            "footer_icon": "${{ env.SLACK_ICON }}",
+            "blocks": [
+            {
+                "type": "section",
+                "text": {
                 "type": "mrkdwn",
-                "text": "*Test Environemnt* \n <${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|GitHub Actions Workflow URL>"
-              }       
-            ]
+                "text": ":rocket: *DEPLOY* - <${{ github.payload.repository.html_url }}|TIA Repo>"
+                }
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "section",
+                "fields": [
+                {
+                    "type": "mrkdwn",
+                    "text": "*Test Environemnt* \n <${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|GitHub Actions Workflow URL>"
+                }       
+                ]
           }
         ]
     }
+  ]
+}
