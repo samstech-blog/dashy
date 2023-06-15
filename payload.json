@@ -13,15 +13,6 @@
         },
         {
         "type": "divider"
-        },
-        {
-        "type": "section",
-        "fields": [
-            {
-            "title": "Test Environment",
-            "text": "<${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|GitHub Actions Workflow URL>"
-            }       
-        ]
         }
     ]
     }
