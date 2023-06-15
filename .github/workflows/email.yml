@@ -16,4 +16,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm help
+      - run: |
+          npm install --global github-email
+          echo "email = $(github-email ${{ github.event.inputs.gh_username }})
