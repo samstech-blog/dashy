@@ -5,46 +5,23 @@
     "text": "TIA Notification",
     "attachments": [
 		{
-			"blocks": [
+			"footer": "Portainer",
+            "footer_icon": "${{ env.SLACK_ICON }}",
+            "blocks": [
 				{
 					"type": "section",
 					"text": {
 						"type": "mrkdwn",
-						"text": "*Alternative hotel options*"
+						"text": "*Deployment Details*"
 					}
 				},
-				{
+                {
 					"type": "section",
 					"text": {
 						"type": "mrkdwn",
-						"text": "<https://example.com|Bates Motel> :star::star:"
-					},
-					"accessory": {
-						"type": "button",
-						"text": {
-							"type": "plain_text",
-							"text": "View",
-							"emoji": true
-						},
-						"value": "view_alternate_1"
+						"text": "Details below"
 					}
-				},
-				{
-					"type": "section",
-					"text": {
-						"type": "mrkdwn",
-						"text": "<https://example.com|The Great Northern Hotel> :star::star::star::star:"
-					},
-					"accessory": {
-						"type": "button",
-						"text": {
-							"type": "plain_text",
-							"text": "View",
-							"emoji": true
-						},
-						"value": "view_alternate_2"
-					}
-				}
+                }				
 			]
 		}
 	]
