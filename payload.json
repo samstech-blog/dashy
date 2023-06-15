@@ -2,35 +2,36 @@
     "channel": "${{ env.SLACK_CHANNEL }}",
     "username": "${{ env.SLACK_USERNAME }}",
     "icon_url": "${{ env.SLACK_ICON }}",
-    "text": "TIA Infra Notification",
+    "text": "TIA Notification"
     "attachments": [
       {
         "color": "${{ env.SLACK_COLOR }}",
+        "author_name": "${{ GITHUB_ACTOR }}",
+        "author_link": "${{ GITHUB_SERVER_URL }}'/'${{ GITHUB_ACTOR }}",
+        "author_icon": "${{ GITHUB_SERVER_URL} }'/'${{ GITHUB_ACTOR }}.png?size=32",
         "footer": "Portainer",
         "footer_icon": "${{ env.SLACK_ICON }}",
-        "fields": [
+        "blocks": [
           {
-            "title": "Test Environment",
-            "short": false,
-            "value": "${{ github.workflow }} workflow failed on ${{ env.portainer_url }} branch in the ${{ github.payload.repository.full_name }} repository!"
-         }, {
-            "title": "Ref",
-            "short": false,
-            "value": "${{ github.ref }}"
-          }, {
-            "title": "Commit",
-            "short": false,
-            "value": "<${{ github.payload.repository.html_url }}/commit/${{ github.sha }}|${{ github.sha }}>"
-          }, {
-            "title": "Author",
-            "short": false,
-            "value": "<https://github.com/${{ github.actor }}|${{ github.actor }}>"
-          }, {
-            "title": "Workflow",
-            "short": false,
-            "value": "<${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|${{ github.workflow }}>"
-          }     
+            "type": "section",
+            "text": {
+              "type": "mrkdwn",
+              "text": ":rocket: *DEPLOY* - <${{ github.event.repository.html_url }}|TIA Repo>"
+            }
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "section",
+            "fields": [
+              {
+                "title": "Test Environment",
+                "text": "<${{ GITHUB_SERVER_URL }}'/'${GITHUB_REPOSITORY}'/actions/runs/'${GITHUB_RUN_ID}'|'GitHub Actions Workflow URL>"
+              }       
+            ]
+          }
         ]
       }
     ]
-  }
+    }
