@@ -1,7 +1,4 @@
 {
-    "channel": "${{ env.SLACK_CHANNEL }}",
-    "username": "${{ env.SLACK_USERNAME }}",
-    "icon_url": "${{ env.SLACK_ICON }}",
     "text": "TIA Infra Notification",
     "attachments": [
       {
