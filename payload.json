@@ -6,9 +6,9 @@
     "attachments": [
       {
         "color": "${{ env.SLACK_COLOR }}",
-        "author_name": "${{ GITHUB_ACTOR }}",
-        "author_link": "${{ GITHUB_SERVER_URL }}'/'${{ GITHUB_ACTOR }}",
-        "author_icon": "${{ GITHUB_SERVER_URL} }'/'${{ GITHUB_ACTOR }}.png?size=32",
+        "author_name": "${{ github.actor }}",
+        "author_link": "${{ GITHUB_SERVER_URL }}'/'${{ github.actor }}",
+        "author_icon": "${{ GITHUB_SERVER_URL} }'/'${{ github.actor }}.png?size=32",
         "footer": "Portainer",
         "footer_icon": "${{ env.SLACK_ICON }}",
         "blocks": [
