@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  portainer_url: https://success-lts.portainer.io
+  portainer_url: "10.113.5.249,10.113.5.250,10.113.5.248"
   portainer_username: admin
   portainer_password: test
   portainer_image: portainer/portainer:latest
@@ -31,7 +31,7 @@ jobs:
       id: slack
       uses: slackapi/slack-github-action@v1.24.0
       with:
-        payload-file-path: "./payload.json"
+        payload-file-path: "./example.json"
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK

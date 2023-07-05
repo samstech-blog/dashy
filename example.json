@@ -1,38 +1,36 @@
 {
-    "text": "GitHub Actions - Slack - Deploy Success",
-    "blocks": [
-      {
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": ":rocket: *DEPLOY* - <${{ github.event.repository.html_url }}|${{ steps.vars.outputs.app }}>"
-        }
-      },
-      {
-        "type": "divider"
-      },
-      {
-        "type": "section",
-        "fields": [
-          {
+  "channel": "${{ env.SLACK_CHANNEL }}",
+  "username": "${{ env.SLACK_USERNAME }}",
+  "icon_url": "${{ env.SLACK_ICON }}",
+  "footer": "Portainer",
+  "footer_icon": "${{ env.SLACK_ICON }}",
+  "text": "${{ env.SLACK_STATUS_ICON }} <${{ github.payload.repository.html_url }}/actions/runs/${{ github.runId }}|Workflow> Notification",
+  "attachments": [
+    {
+      "color": "${{ env.SLACK_COLOR }}",
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
             "type": "mrkdwn",
-            "text": "*PR* - <${{ github.event.pull_request.html_url || github.event.head_commit.url }}|${{ github.event.pull_request.title || github.event.head_commit.message }}>"
-          },
-          {
-            "type": "mrkdwn",
-            "text": "*Workflow* - <${{ github.event.repository.html_url }}/actions/runs/${{ github.run_id }}|Logs>"
+            "text": "*Environment Details*"
           }
-        ]
-      },
-      {
-        "type": "divider"
-      },
-      {
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": "*STATUS* - ${{ github.action_status }} :white_check_mark:"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": " *- Owner:* <https://github.com/${{ github.actor }}|${{ github.actor }}> \n *- IP Addresses:* `${{ env.portainer_url }}` \n *- Orchestration:* `${{ env.orchestration }}` \n *- Destroy Id:* `${{ env.destroy_id }}`"
+          }
         }
-      }
-    ]
-  }
+      ]
+    },
+    {
+      "footer": "Portainer",
+      "footer_icon": "${{ env.SLACK_ICON }}"
+    }
+  ]
+}
