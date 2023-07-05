@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  portainer_url: "10.113.5.249,10.113.5.250,10.113.5.248"
+  portainer_url: '"10.113.5.249,10.113.5.250,10.113.5.248"'
   portainer_username: admin
   portainer_password: test
   portainer_image: portainer/portainer:latest
