@@ -124,7 +124,7 @@ body:
     attributes:
       label: Command used to deploy Portainer?
       description: Provide the command or compose used to deploy Portainer.
-      placeholder: `docker run -p 9443:9443 portainer/portainer`
+      placeholder: docker run -p 9443:9443 portainer/portainer
     validations:
       required: false
 
