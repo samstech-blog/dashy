@@ -88,5 +88,16 @@ body:
       description: |
         Enter a valid version (eg: 2.18.4)
         We only provide support for most recent version and previous 3
+      placeholder: 2.18.4
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Platform and Version?
+      description: |
+        Enter a the container management platform (Docker | Swarm | Kubernetes along with version)
+        Eg: Docker 24.0.3 | DOcker Swarm 24.0.3 | Kubernetes 1.26
+      placeholder: Docker 24.0.3
     validations:
       required: true
