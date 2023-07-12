@@ -13,7 +13,7 @@ body:
       options:
         - label: Yes, I've searched similar issues on [GitHub](https://github.com/portainer/poartainer/issues).
           required: true
-        - label: Yes, I've checked [documentation](https://docs.portainer.io).
+        - label: Yes, I've checked [documentation](https://docs.portainer.io) and [Knowledge Base](https://portal.portainer.io/knowledge).
           required: true
 
   - type: textarea
