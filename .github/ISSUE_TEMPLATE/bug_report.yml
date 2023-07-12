@@ -48,13 +48,6 @@ body:
 
   - type: textarea
     attributes:
-      label: logs and screenshots?
-      placeholder: Provide Portainer container logs or any screenshots pertaining to the issue
-    validations:
-      required: false
-
-  - type: textarea
-    attributes:
       label: Steps to Reproduce?
       placeholder: |
         1. Go to '...'
@@ -63,6 +56,13 @@ body:
         4. See error   
     validations:
       required: true
+
+  - type: textarea
+    attributes:
+      label: logs and screenshots?
+      placeholder: Provide Portainer container logs or any screenshots pertaining to the issue
+    validations:
+      required: false
 
   - type: dropdown
     attributes:
