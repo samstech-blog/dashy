@@ -34,38 +34,28 @@ body:
 
   - type: textarea
     attributes:
-      label: What did you see instead?
-      placeholder: What did you see instead?
+      label: Expected Behaviour
+      placeholder: A clear and concise description of what you expected to happen...
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: What version of Traefik are you using?
-      description: |
-        `latest` is not considered as a valid version.
-
-        Output of `traefik version`.
-
-        For the Traefik Docker image (`docker run [IMAGE] version`), example:
-        ```console
-        $ docker run traefik version
-        ```
-      placeholder: Paste your output here.
+      label: Actual Behaviour?
+      placeholder: A clear and concise description of what actually happens...
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: What is your environment & configuration?
+      label: Steps to Reproduce?
       description: arguments, toml, provider, platform, ...
-      placeholder: Add information here.
-      value: |
-        ```yaml
-        # (paste your configuration here)
-        ```
-
-        Add more configuration information here.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+        
     validations:
       required: true
 
