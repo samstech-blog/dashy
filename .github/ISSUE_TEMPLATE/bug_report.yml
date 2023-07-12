@@ -91,7 +91,7 @@ body:
 
   - type: input
     attributes:
-      label: Portainer Version Input?
+      label: Portainer Version [Alt]?
       description: |
         Enter a valid version (eg: 2.18.4)
         We only provide support for most recent version and previous 3
