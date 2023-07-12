@@ -2,23 +2,22 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for opening a feature request for Portainer !
+        # Welcome!
+        
+        Thanks for suggesting an idea for Portainer!
 
         Do you need help or have a question? Come chat with us on Slack https://portainer.io/slack/
 
-        Before opening a new issue, make sure that we do not have any duplicates
-        already open. You can ensure this by searching the issue list for this
-        repository. If there is a duplicate, please close your issue and add a comment
-        to the existing issue instead.
+        Before opening a new idea or feature request, make sure that we do not have any duplicates already open. You can ensure this by [searching this discussion cagetory](https://github.com/samdulam/dashy/discussions/categories/ideas). If there is a duplicate, please add a comment to the existing idea instead.
 
-        Also, be sure to check our FAQ and documentation first: https://documentation.portainer.io/
+        Also, be sure to check our [knowledge base](https://portal.portainer.io/knowledge) and [documentation](https://docs.portainer.io) as they may point you toward a solution.
         
         **DO NOT FILE DUPLICATE REQUESTS.**
 
   - type: textarea
     attributes:
       label: Is your feature request related to a problem? Please describe
-      description: Short list of what the feature request aims to address?
+      description: Short list of what the feature request aims to address.
     validations:
       required: true
   - type: textarea
