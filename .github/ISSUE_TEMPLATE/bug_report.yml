@@ -11,24 +11,24 @@ body:
         
         DO NOT FILE ISSUES FOR GENERAL SUPPORT QUESTIONS.
       options:
-        - label: Yes, I've searched similar issues on [GitHub](https://github.com/portainer/poartainer/issues). and checked [documentation](https://docs.portainer.io).
+        - label: Yes, I've searched similar issues on [GitHub](https://github.com/portainer/poartainer/issues).
           required: true
         - label: Yes, I've checked [documentation](https://docs.portainer.io).
           required: true
 
   - type: textarea
     attributes:
-      label: What did you do?
+      label: Problem Description?
       description: |
         How to write a good bug report?
 
         - Respect the issue template as much as possible.
         - The title should be short and descriptive.
         - Explain the conditions which led you to report this issue: the context.
-        - The context should lead to something, an idea or a problem that you’re facing.
+        - The context should lead to something, an idea or a problem that you're facing.
         - Remain clear and concise.
         - Format your messages to help the reader focus on what matters and understand the structure of your message, use [Markdown syntax](https://help.github.com/articles/github-flavored-markdown)
-      placeholder: What did you do?
+      placeholder: A clear and concise description of what the bug is...
     validations:
       required: true
 
