@@ -17,8 +17,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Before you start
-      description: Please confirm the following.
+      label: Before you start please confirm the following:
       options:
         - label: Yes, I've searched similar issues on [GitHub](https://github.com/portainer/poartainer/issues).
           required: true
