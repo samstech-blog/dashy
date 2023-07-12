@@ -2,40 +2,40 @@ body:
   - type: markdown
     attributes:
       value: |
-        The issue tracker is for reporting bugs. For feature requests and other questions please use [discussions](https://github.com/samdulam/dashy/discussions)
-        Link to community slack perhaps
+        Thanks for opening a feature request for Portainer !
+
+        Do you need help or have a question? Come chat with us on Slack https://portainer.io/slack/
+
+        Before opening a new issue, make sure that we do not have any duplicates
+        already open. You can ensure this by searching the issue list for this
+        repository. If there is a duplicate, please close your issue and add a comment
+        to the existing issue instead.
+
+        Also, be sure to check our FAQ and documentation first: https://documentation.portainer.io/
         
         **DO NOT FILE DUPLICATE REQUESTS.**
 
   - type: textarea
     attributes:
-      label: Goals
+      label: Is your feature request related to a problem? Please describe
       description: Short list of what the feature request aims to address?
-      value: |
-        1.
-        2.
-        3.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Non-Goals
-      description: Short list of what the feature request _does not_ aim to address?
-      value: |
-        1.
-        2.
-        3.
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
     validations:
       required: false
-  - type: textarea
-    attributes:
-      label: Background
-      description: Discuss prior art, why do you think this feature is needed? Are there current alternatives?
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Proposal
-      description: How should this feature be implemented? Are you interested in contributing?
-    validations:
-      required: true
