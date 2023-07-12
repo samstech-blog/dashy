@@ -90,7 +90,7 @@ body:
   - type: dropdown
     attributes:
       label: Portainer version
-      description: We only provide support for the most recent version of Portainer and the previous 3 versions. If you are on an older version of Portainer we recommend upgrading first in case your bug has already been fixed.
+      description: We only provide support for the most recent version of Portainer and the previous 3 versions. If you are on an older version of Portainer we recommend [upgrading first](https://docs.portainer.io/start/upgrade) in case your bug has already been fixed.
       multiple: false
       options:
         - '2.18.4'
