@@ -21,16 +21,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        **About your issue**
+        # About your issue
 
         Tell us a bit about the issue you're having.
 
         How to write a good bug report:
 
         - Respect the issue template as much as possible.
-        - The title should be short and descriptive.
-        - Explain the conditions which led you to report this issue: the context.
-        - The context should lead to something, an idea or a problem that you're facing.
+        - Summarize the issue so that we understand what is going wrong.
+        - Describe what you would have expected to have happened, and what actually happened instead.
+        - Provide easy to follow steps to reproduce the issue. 
         - Remain clear and concise.
         - Format your messages to help the reader focus on what matters and understand the structure of your message, use [Markdown syntax](https://help.github.com/articles/github-flavored-markdown).
 
@@ -77,7 +77,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **About your environment**
+        # About your environment
 
         Tell us a bit about your Portainer environment.
 
