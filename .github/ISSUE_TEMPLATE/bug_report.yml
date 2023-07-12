@@ -6,16 +6,14 @@ body:
     attributes:
       label: Welcome!
       description: |
-        The issue tracker is for reporting bugs and feature requests only. For end-user related support questions, please refer to one of the following:
-        - the Traefik community forum: https://community.containo.us/
-
-        The configurations between 1.X and 2.X are NOT compatible. Please have a look [here](https://doc.traefik.io/traefik/getting-started/configuration-overview/).
-
+        The issue tracker is for reporting bugs. For feature requests and other questions please use [discussions](https://github.com/samdulam/dashy/discussions)
+        Link to community slack perhaps
+        
         DO NOT FILE ISSUES FOR GENERAL SUPPORT QUESTIONS.
       options:
-        - label: Yes, I've searched similar issues on [GitHub](https://github.com/traefik/traefik/issues) and didn't find any.
+        - label: Yes, I've searched similar issues on [GitHub](https://github.com/portainer/poartainer/issues). and checked [documentation](https://docs.portainer.io).
           required: true
-        - label: Yes, I've searched similar issues on the [Traefik community forum](https://community.containo.us) and didn't find any.
+        - label: Yes, I've checked [documentation](https://docs.portainer.io).
           required: true
 
   - type: textarea
