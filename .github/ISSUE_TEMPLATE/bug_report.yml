@@ -108,7 +108,7 @@ body:
       label: Enter your Portainer version
       description: |
         Enter a valid Portainer version. Example: 2.18.4
-        We only provide support for the most recent version of Portainer and the previous 3 versions. If you are on an older version of Portainer we recommend upgrading first in case your bug has already been fixed.
+        We only provide support for the most recent version of Portainer and the previous 3 versions. If you are on an older version of Portainer we recommend [upgrading first](https://docs.portainer.io/start/upgrade) in case your bug has already been fixed.
     validations:
       required: false
 
@@ -126,7 +126,8 @@ body:
     attributes:
       label: Platform and Version
       description: |
-        Enter your container management platform (Docker | Swarm | Kubernetes) along with the version. Example: Docker 24.0.3 | Docker Swarm 24.0.3 | Kubernetes 1.26
+        Enter your container management platform (Docker | Swarm | Kubernetes) along with the version. 
+        Example: Docker 24.0.3 | Docker Swarm 24.0.3 | Kubernetes 1.26
         You can find our supported platforms [in our documentation](https://docs.portainer.io/start/requirements-and-prerequisites).
     validations:
       required: true
