@@ -2,11 +2,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before asking a question, make sure it hasn't been already asked and answered. Check current issues, question.
-
-        Also, be sure to check our [Knowledge Base](https://portal.portainer.io/knowledge) and [documentatio](https://documentation.portainer.io/) first.
-        
-        **DO NOT FILE DUPLICATE REQUESTS.**
+        Before asking a question, make sure it hasn't been already asked and answered. You can search our [discussions](https://github.com/samdulam/dashy/discussions) and [bug reports](https://github.com/portainer/portainer/issues) in GitHub.  Also, be sure to check our [knowledge base](https://portal.portainer.io/knowledge) and [documentation](https://documentation.portainer.io/) first.
 
   - type: textarea
     attributes:
