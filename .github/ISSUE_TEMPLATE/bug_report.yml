@@ -152,7 +152,7 @@ body:
     attributes:
       label: What command did you use to deploy Portainer?
       description: |
-        Example: docker run -p 9443:9443 portainer/portainer
+        Example: `docker run -p 9443:9443 portainer/portainer`
         If you deployed Portainer using a compose file or manifest you can provide this here as well.
     validations:
       required: false
