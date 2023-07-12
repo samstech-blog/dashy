@@ -64,3 +64,29 @@ body:
       options:
         - 'Business Edition (BE/EE)'
         - 'Community Edition (CE)'
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Portainer Version?
+      multiple: false
+      options:
+        - '2.18.4'
+        - '2.18.3'
+        - '2.18.2'
+        - '2.18.1'
+        - '2.17.1'
+        - '2.17.0'
+        - '2.16.2'
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Portainer Version?
+      description: |
+        Enter a valid version (eg: 2.18.4)
+        We only provide support for most recent version and previous 3
+    validations:
+      required: true
