@@ -1,12 +1,6 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Getting Started with Portainer?
-    url: https://documentation.portainer.io/quickstart/
-    about: Checkout our quickstart guide..
-  - name: Portainer Community Support
-    url: https://community.portainer.io/about-the-community
-    about: Have a question about Portainer CE? Find all the usual community channels here..
-  - name: Portainer Business
-    url: https://www.portainer.io/portainerbusiness 
-    about: Would you and your co-workers benefit from our enterprise edition which provides functionality to deploy Portainer at scale? 
-    
+  - name: Feature Request or Question?
+    url: https://github.com/samdulam/dashy/discussions
+    about: Check our discussions page
+
