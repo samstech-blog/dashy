@@ -2,16 +2,23 @@ name: Bug Report
 description: Create a report to help us improve.
 labels: kind/bug,bug/need-confirmation
 body:
-  - type: checkboxes
-    id: terms
+
+  - type: markdown
     attributes:
-      label: Welcome!
-      description: |
+      value: |
+        # Welcome!
+        
         The issue tracker is for reporting bugs. If you have an [idea for a new feature](https://github.com/samdulam/dashy/discussions/categories/ideas) or a [general question about Portainer](https://github.com/samdulam/dashy/discussions/categories/help) please post in our [GitHub Discussions](https://github.com/samdulam/dashy/discussions).
         
         You can also ask for help in our [community Slack channel](https://join.slack.com/t/portainer/shared_invite/zt-txh3ljab-52QHTyjCqbe5RibC2lcjKA).
         
-        DO NOT FILE ISSUES FOR GENERAL SUPPORT QUESTIONS.
+        **DO NOT FILE ISSUES FOR GENERAL SUPPORT QUESTIONS**.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Before you start
+      description: Please confirm the following.
       options:
         - label: Yes, I've searched similar issues on [GitHub](https://github.com/portainer/poartainer/issues).
           required: true
@@ -70,7 +77,7 @@ body:
   - type: textarea
     attributes:
       label: Portainer logs or screenshots
-      placeholder: Provide Portainer container logs or any screenshots related to the issue.
+      description: Provide Portainer container logs or any screenshots related to the issue.
     validations:
       required: false
 
