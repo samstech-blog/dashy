@@ -134,14 +134,16 @@ body:
   - type: input
     attributes:
       label: OS and Architecture
-      description: Enter your Operating System, Version and Architecture. Example: Ubuntu 22.04, AMD64 | Raspbian OS, ARM64
+      description: |
+        Enter your Operating System, Version and Architecture. Example: Ubuntu 22.04, AMD64 | Raspbian OS, ARM64
     validations:
       required: true
 
   - type: input
     attributes:
       label: Browser
-      description: Enter your browser and version. Example: Google Chrome 114.0
+      description: | 
+        Enter your browser and version. Example: Google Chrome 114.0
     validations:
       required: false
 
