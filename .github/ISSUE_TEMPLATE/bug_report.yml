@@ -57,10 +57,10 @@ body:
     validations:
       required: true
 
-- type: dropdown
-    attributes:
-      label: Portainer Edition?
-      multiple: false
-      options:
-        - 'Business Edition (BE/EE)'
-        - 'Community Edition (CE)'
+  - type: dropdown
+      attributes:
+        label: Portainer Edition?
+        multiple: false
+        options:
+          - 'Business Edition (BE/EE)'
+          - 'Community Edition (CE)'
