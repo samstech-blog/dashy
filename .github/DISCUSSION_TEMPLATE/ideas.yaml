@@ -1,12 +1,11 @@
 body:
   - type: markdown
     attributes:
-      label: Welcome!
-      description: |
+      value: |
         The issue tracker is for reporting bugs. For feature requests and other questions please use [discussions](https://github.com/samdulam/dashy/discussions)
         Link to community slack perhaps
         
-        DO NOT FILE DUPLICATE REQUESTS.
+        **DO NOT FILE DUPLICATE REQUESTS.**
 
   - type: textarea
     attributes:
