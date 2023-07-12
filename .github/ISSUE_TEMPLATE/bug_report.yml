@@ -101,3 +101,13 @@ body:
       placeholder: Docker 24.0.3
     validations:
       required: true
+
+  - type: input
+    attributes:
+      label: OS and Architecture?
+      description: |
+        Enter a the Operating System, Version and Architecture 
+        Eg: Ubuntu 22.04, amd64 | Rasbian arm64
+      placeholder: Ubuntu 22.04, amd64
+    validations:
+      required: true
