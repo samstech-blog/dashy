@@ -49,7 +49,6 @@ body:
   - type: textarea
     attributes:
       label: Steps to Reproduce?
-      description: arguments, toml, provider, platform, ...
       placeholder: |
         1. Go to '...'
         2. Click on '....'
@@ -58,10 +57,10 @@ body:
     validations:
       required: true
 
-  - type: textarea
+- type: dropdown
     attributes:
-      label: If applicable, please paste the log output in DEBUG level
-      description: "`--log.level=DEBUG` switch."
-      placeholder: Paste your output here.
-    validations:
-      required: false
+      label: Portainer Edition?
+      multiple: false
+      options:
+        - 'Business Edition (BE/EE)'
+        - 'Community Edition (CE)'
