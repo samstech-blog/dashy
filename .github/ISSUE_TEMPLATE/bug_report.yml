@@ -109,7 +109,6 @@ body:
       description: |
         Enter a valid version (eg: 2.18.4)
         We only provide support for the most recent version of Portainer and the previous 3 versions. If you are on an older version of Portainer we recommend upgrading first in case your bug has already been fixed.
-      placeholder: 2.18.4
     validations:
       required: false
 
@@ -129,7 +128,6 @@ body:
       description: |
         Enter your container management platform (Docker | Swarm | Kubernetes) along with the version. You can find our supported platforms [in our documentation](https://docs.portainer.io/start/requirements-and-prerequisites).
         Example: Docker 24.0.3 | DOcker Swarm 24.0.3 | Kubernetes 1.26
-      placeholder: Docker 24.0.3
     validations:
       required: true
 
@@ -139,23 +137,24 @@ body:
       description: |
         Enter the Operating System, Version and Architecture.
         Example: Ubuntu 22.04, AMD64 | Raspbian OS, ARM64
-      placeholder: Ubuntu 22.04, AMD64
     validations:
       required: true
 
   - type: input
     attributes:
       label: Browser
-      description: Enter your browser and version.
-      placeholder: Google Chrome 114.0
+      description: |
+        Enter your browser and version.
+        Example: Google Chrome 114.0
     validations:
       required: false
 
   - type: textarea
     attributes:
       label: What command did you use to deploy Portainer?
-      description: If you deployed Portainer using a compose file or manifest you can provide this here as well.
-      placeholder: docker run -p 9443:9443 portainer/portainer
+      description: |
+        If you deployed Portainer using a compose file or manifest you can provide this here as well.
+        Example: docker run -p 9443:9443 portainer/portainer
     validations:
       required: false
 
