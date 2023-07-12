@@ -1,5 +1,5 @@
 body:
-  - type: textarea
+  - type: markdown
     attributes:
       label: Welcome!
       description: |
