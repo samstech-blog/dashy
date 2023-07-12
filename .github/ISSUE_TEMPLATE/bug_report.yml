@@ -19,7 +19,7 @@ body:
     attributes:
       label: Before you start please confirm the following.
       options:
-        - label: Yes, I've searched similar issues on [GitHub](https://github.com/portainer/poartainer/issues).
+        - label: Yes, I've searched similar issues on [GitHub](https://github.com/portainer/portainer/issues).
           required: true
         - label: Yes, I've checked whether this issue is covered in the Portainer [documentation](https://docs.portainer.io) or [knowledge base](https://portal.portainer.io/knowledge).
           required: true
