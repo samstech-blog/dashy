@@ -106,8 +106,24 @@ body:
     attributes:
       label: OS and Architecture?
       description: |
-        Enter a the Operating System, Version and Architecture 
+        Enter the Operating System, Version and Architecture 
         Eg: Ubuntu 22.04, amd64 | Rasbian arm64
       placeholder: Ubuntu 22.04, amd64
     validations:
       required: true
+
+  - type: textarea
+    attributes:
+      label: Browser?
+      description: Provide the browser and version details.
+      placeholder: Chrome 114 | Edge 114
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Command used to deploy Portainer?
+      description: Provide the command or compose used to deploy Portainer.
+      placeholder: `docker run -p 9443:9443 portainer/portainer`
+    validations:
+      required: false
